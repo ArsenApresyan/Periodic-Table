@@ -1,0 +1,158 @@
+html {
+	min-width: 1250px;
+}
+body {
+	background-color: #fff;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+main {
+	position: relative;
+
+	display: table;
+	margin: auto;
+}
+.stage {
+	height: 340px;
+    width: 340px;
+    perspective: 1000px;
+    margin: 220px auto;
+}
+.one {
+    transform-style: preserve-3d;
+    transition: 1s; 
+    transform: rotateY(0);
+}
+table {
+	min-height: 340px;
+    min-width: 340px;
+
+    position: absolute;
+
+    border-spacing: 5px;
+    background-color: #000;
+}
+td {
+	font-family: monospace;
+	text-align: center;
+	
+	border-radius: 3px;
+
+	transition: 1s;
+}
+small {
+	font-size: 12px;
+	text-align: left;
+
+	display: block;
+	box-sizing: border-box;
+}
+big {
+	font-size: 20px;
+	
+	display: block;
+}
+bdo {
+	width: 56px;
+
+	font-size: 8px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	
+	display: block;
+}
+bdi {
+	width: 56px;
+
+	font-size: 8px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+	display: block;
+}
+.alkaliMetals, .alkaliMetals div {
+	background: -webkit-linear-gradient(-45deg, #5f3c72 0%, #9f83ae 25%, #5f3c72 50%, #9f83ae 75%, #5f3c72 100%);
+}
+.alkalineMetals, .alkalineMetals div {
+	background: -webkit-linear-gradient(-45deg, #6c669d 0%, #a8a5c8 25%, #6c669d 50%, #a8a5c8 75%, #6c669d 100%);
+}
+.transitionMetals, .transitionMetals div {
+	background: -webkit-linear-gradient(-45deg, #2d84ca 0%, #53a0d4 25%, #2d84ca 50%, #53a0d4 75%, #2d84ca 100%);
+}
+.basicMetals, .basicMetals div {
+	background: -webkit-linear-gradient(-45deg, #2b90a4 0%, #53a9b7 25%, #2b90a4 50%, #53a9b7 75%, #2b90a4 100%);
+}
+.semiMetals, .semiMetals div {
+	background: -webkit-linear-gradient(-45deg, #359046 0%, #70b77c 25%, #359046 50%, #70b77c 75%, #359046 100%);
+}
+.nonmetals, .nonmetals div {
+	background: -webkit-linear-gradient(-45deg, #EAE88D 0%,#C3BF27 25%, #EAE88D 50%, #C3BF27 75%, #EAE88D 100%);
+}
+.halogens, .halogens div {
+	background: -webkit-linear-gradient(-45deg, #cb6b00 0%, #e5a84a 25%, #cb6b00 50%, #e5a84a 75%, #cb6b00 100%);
+}
+.nobleGases, .nobleGases div {
+	background: -webkit-linear-gradient(-45deg, #ba0000 0%, #e04153 25%, #ba0000 50%, #e04153 75%, #ba0000 100%);
+}
+.lanthanides, .lanthanides div {
+	background: -webkit-linear-gradient(-45deg, #ce648b 0%, #e09ab3 25%, #ce648b 50%, #e09ab3 75%, #ce648b 100%);
+}
+.actinides, .actinides div {
+	background: -webkit-linear-gradient(-45deg, #da0b45 0%, #f05e8c 25%, #da0b45 50%, #f05e8c 75%, #da0b45 100%);
+}
+.red {
+	background-color: #4C392B;
+}
+.face1 {
+	transform: translateZ(350px);
+}
+.face2 {
+	transform: rotateY(60deg) translateZ(350px);
+}
+.face3 {
+	transform: rotateY(120deg) translateZ(350px);	
+}
+.face4 {
+	transform: rotateY(180deg) translateZ(350px);
+}
+.face5 {
+	transform: rotateY(-120deg) translateZ(350px);
+}
+.face6 {
+	transform: rotateY(-60deg) translateZ(350px);
+}
+#next, #prev {
+    position: absolute;
+    bottom: 50px;
+
+    color: #C4E9FF;
+    
+    display: inline-block;
+    background: #98132B;
+    padding: 1em 2em;
+    border-radius: 25px;
+    border-top: 1px solid #fff;
+    box-shadow: 0 5px 0 #999;
+    cursor: pointer;
+    transition: box-shadow 0.1s, top 0.1s;
+}
+#next {
+	right: 0;
+}
+#prev {
+	left: 0;
+}
+#next:hover,  #prev:hover {
+	color: #000;
+}
+#next:active, #prev:active {
+	bottom: 46px;
+	box-shadow: 0 1px 0 #999;
+}
+@media (min-width: 2500px) {
+    th, bdo, bdi {
+        font-size: 5px;
+    }
+}

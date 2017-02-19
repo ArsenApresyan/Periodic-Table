@@ -1,0 +1,51 @@
+html, body, header, main, object {
+	width: 100%;
+}
+html, body,main, object {
+	height: 100%;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+header {
+	height: 50px;
+
+	font-family: monospace;
+
+	background: linear-gradient( #8E8B8E 0%, #E6E2DE 25%, #6c669d 50%, #a8a5c8 75%, #6c669d 100%);
+	box-shadow: 5px 7px 40px #634176;
+}
+header>menu {
+	display: table;
+	margin: auto;
+}
+.tr {
+	display: inline-block;
+}
+menuitem {
+	width: 170px;
+	
+	font-size: 25px;
+	text-align: center;
+
+	display: inline-block;
+	border-right: 2px solid #634176;
+}
+menuitem>a {
+	line-height: 50px;
+	color: #000;
+	text-decoration: none;
+	
+	display: block;
+}
+object {
+	min-height: 1250px;
+	padding-top: 90px;
+}
+.tr:nth-child(1) menuitem:nth-child(1) {
+	border-left: 2px solid #634176;
+}
+
+
+

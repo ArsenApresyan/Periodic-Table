@@ -1,0 +1,330 @@
+html {	
+	min-width: 1250px;
+}
+body {
+	background-color: #fff;
+}
+main {
+	width: 1220px;
+	position: relative;
+
+	display: block;
+	margin: auto;
+}
+.a1>div>div div:nth-child(2) {
+	width: 100%;
+} 
+.a1 .td, .a2 .td, .a3 .td {
+	border: 2px solid #fff;
+} 
+.a1, .a2 {
+	width: 100%;
+}
+.a2>div>div div:nth-child(3) {
+	width: 100%;
+}
+marquee {
+	width: 62px;
+	
+	display: block;
+}
+marquee>.table {
+	border-spacing: 4px 0;
+}
+marquee>.table .td {
+	border:none;
+}
+marquee>.table .td:after {
+    display: none;
+}
+.table {
+	display: table;
+}
+.tbody {
+	display: table-row-group;
+}
+.tr {
+	display: table-row;
+}
+.th {
+	height: 62px;
+	min-width: 62px;
+	
+	font-size: 11px;
+	text-align: center;
+
+	display: table-cell;
+	vertical-align: middle;
+}
+.td {
+	font-size: 8px;
+	text-align: center;
+	
+	display: table-cell;
+	border-radius: 4px;
+}
+.td::after {
+	height: 148px;
+    width: 231px;
+
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 345px;
+
+    display: none;
+}
+.td:hover ruby:after {
+	display: block;
+	animation: vanish 1s;
+}
+.td:hover strong:after {
+	display: block;
+	animation: vanish 1s;
+}
+.td:hover tt:after {
+	display: block;
+	animation: vanish 1s;
+}
+.td:hover rt:after {
+	display: block;
+	animation: vanish 1s;
+}
+.a2 .td:hover:after {
+	display: block;
+	animation: vanish 1s;
+}
+.a3 .td:hover:after {
+	display: block;
+	animation: vanish 1s;
+}
+p, p .att_number, p .symbol, p .name, .p .att_mass{
+	position: absolute;
+}
+p {
+	display: none;
+}
+.td:hover>p {
+	display: inline-block;
+}
+.at_number {
+    width: 100px;
+
+    top: 14px;
+    left: 95px;
+
+    font-size: 20px;
+    white-space: nowrap;
+}
+.at_number hr {
+	top: 15px;
+	left: 145px;
+}
+.symbol {
+    width: 100px;
+
+    top: 50px;
+    left: 620px;
+
+    font-size: 20px;
+    white-space: nowrap;
+}
+.symbol hr {
+	top: 12px;
+	left: -100px;
+}
+.name {
+    width: 100px;
+
+    top: 92px;
+    left: 190px;
+    
+    font-size: 20px;
+    white-space: nowrap;
+}
+.name hr{
+	top: 14px;
+	left: 80px;
+}
+.at_mass {
+    width: 100px;
+    top: 125px;
+    left: 640px;
+    font-size: 20px;
+    white-space: nowrap;
+}
+.at_mass hr {
+    top: 13px;
+    left: -100px;
+}
+hr {
+	width: 100px;
+	
+	position: absolute;
+	z-index: 1;
+}
+.tfoot {
+	display: table-footer-group;
+}
+.tfoot>.table {
+	box-sizing: border-box;
+	padding: 0 111px;
+	border-spacing: 4px;
+}
+.tfoot>.table .td {
+	height: 30px;
+	width: 190px;
+
+	font-size: 21px;
+
+	padding: 8px 0;
+	vertical-align: middle;
+}
+figure {
+	position: absolute;
+	left: 335px;
+}
+figure img {
+	height: 200px;
+	width: 250px;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+rt {
+	font-size: 10px;
+	text-align: left;
+
+	display: table-row;
+}
+rt::after {
+	height: 25px;
+    width: 231px;
+
+    position: absolute;
+	z-index: 1;
+    top: 19px;
+    left: 345px;
+    
+    font-size: 22px;
+    content: attr(content-text);
+
+    display: none;
+}
+ruby {
+	font-size: 24px;
+
+	display: table-row-group;
+}
+ruby::after {
+	width: 231px;
+	
+	position: absolute;
+	z-index: 1;
+	top: 40px;
+	left: 345px;
+	
+	font-size: 35px;
+	content: attr(content-text);
+	
+	display: none;
+}
+strong {
+	width: 56px;
+
+	font-size: 8px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	
+	display: block;
+}
+strong::after {
+	height: 25px;
+	width: 231px;
+    
+	position: absolute;
+	z-index: 1;
+	top: 93px;
+	left: 345px;
+    
+	font-size: 25px;
+	content: attr(content-text);
+
+	display: none;
+}
+tt {
+	width: 56px;
+
+	font-size: 8px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    display: block;
+}
+tt:after {
+	height: 25px;
+	width: 231px;
+    
+	position: absolute;
+	z-index: 1;
+	top: 129px;
+	left: 345px;
+    
+	font-size: 15px;
+	content: attr(content-text);
+	
+	display: none;
+}
+a {
+	color: #000;
+	text-decoration: none;
+
+	display: table;
+	padding: 3px;
+}
+.alkaliMetals, .alkaliMetals:after {
+	background: -webkit-linear-gradient(-45deg, #5f3c72 0%, #9f83ae 25%, #5f3c72 50%, #9f83ae 75%, #5f3c72 100%);
+	background: -moz-linear-gradient(-45deg, #5f3c72 0%, #9f83ae 25%, #5f3c72 50%, #9f83ae 75%, #5f3c72 100%);
+}
+.alkalineMetals, .alkalineMetals:after {
+	background: -moz-linear-gradient(-45deg, #6c669d 0%, #a8a5c8 25%, #6c669d 50%, #a8a5c8 75%, #6c669d 100%);
+	background: -webkit-linear-gradient(-45deg, #6c669d 0%, #a8a5c8 25%, #6c669d 50%, #a8a5c8 75%, #6c669d 100%);
+}
+.transitionMetals, .transitionMetals:after {
+	background: -webkit-linear-gradient(-45deg, #2d84ca 0%, #53a0d4 25%, #2d84ca 50%, #53a0d4 75%, #2d84ca 100%);
+	background: -moz-linear-gradient(-45deg, #2d84ca 0%, #53a0d4 25%, #2d84ca 50%, #53a0d4 75%, #2d84ca 100%);
+}
+.basicMetals, .basicMetals:after {
+	background: -webkit-linear-gradient(-45deg, #2b90a4 0%, #53a9b7 25%, #2b90a4 50%, #53a9b7 75%, #2b90a4 100%);
+	background: -moz-linear-gradient(-45deg, #2b90a4 0%, #53a9b7 25%, #2b90a4 50%, #53a9b7 75%, #2b90a4 100%);
+}
+.semiMetals, .semiMetals:after {
+	background: -webkit-linear-gradient(-45deg, #359046 0%, #70b77c 25%, #359046 50%, #70b77c 75%, #359046 100%);
+	background: -moz-linear-gradient(-45deg, #359046 0%, #70b77c 25%, #359046 50%, #70b77c 75%, #359046 100%);
+}
+.nonmetals, .nonmetals:after {
+	background: -webkit-linear-gradient(-45deg, #EAE88D 0%,#C3BF27 25%, #EAE88D 50%, #C3BF27 75%, #EAE88D 100%);
+	background: -moz-linear-gradient(-45deg, #EAE88D 0%,#C3BF27 25%, #EAE88D 50%, #C3BF27 75%, #EAE88D 100%);
+}
+.halogens, .halogens:after {
+	background: -webkit-linear-gradient(-45deg, #cb6b00 0%, #e5a84a 25%, #cb6b00 50%, #e5a84a 75%, #cb6b00 100%);
+	background: -moz-linear-gradient(-45deg, #cb6b00 0%, #e5a84a 25%, #cb6b00 50%, #e5a84a 75%, #cb6b00 100%);
+}
+.nobleGases,.nobleGases:after {
+	background: -webkit-linear-gradient(-45deg, #ba0000 0%, #e04153 25%, #ba0000 50%, #e04153 75%, #ba0000 100%);
+	background: -moz-linear-gradient(-45deg, #ba0000 0%, #e04153 25%, #ba0000 50%, #e04153 75%, #ba0000 100%);
+}
+.lanthanides, .lanthanides:after {
+	background: -webkit-linear-gradient(-45deg, #ce648b 0%, #e09ab3 25%, #ce648b 50%, #e09ab3 75%, #ce648b 100%);
+	background: -moz-linear-gradient(-45deg, #ce648b 0%, #e09ab3 25%, #ce648b 50%, #e09ab3 75%, #ce648b 100%);
+}
+.actinides, .actinides:after {
+	background: -webkit-linear-gradient(-45deg, #da0b45 0%, #f05e8c 25%, #da0b45 50%, #f05e8c 75%, #da0b45 100%);
+	background: -moz-linear-gradient(-45deg, #da0b45 0%, #f05e8c 25%, #da0b45 50%, #f05e8c 75%, #da0b45 100%);
+}
+@media (min-width: 2500px){
+    .th, strong, tt{
+        font-size: 5px;
+    }
+}
